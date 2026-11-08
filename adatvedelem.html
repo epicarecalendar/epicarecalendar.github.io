@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EpiCare – Adatvédelmi szabályzat</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1c2430; --muted:#5b6675; --accent:#0a8fa3; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1722; --fg:#e8edf2; --muted:#9aa6b4; --accent:#4fd1e3; --line:#253142; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  .box { border:1px solid var(--line); border-radius:10px; padding:12px 16px; }
+</style>
+</head>
+<body>
+<main>
+<h1>EpiCare – Adatvédelmi szabályzat</h1>
+<p class="meta">Hatályos: 2026. november 8.</p>
+
+<div class="box">
+  <strong>Röviden:</strong> az EpiCare a rohamnaplódat, gyógyszereidet és ciklusadataidat azért tárolja,
+  hogy vezethesd a naplódat, és ha te úgy döntesz, megoszthasd a kezelőorvosoddal.
+  Egészségügyi adataidat <strong>nem adjuk el, és nem adjuk át hirdetőknek</strong>.
+  A fiókodat és minden adatodat bármikor törölheted az alkalmazásban.
+</div>
+
+<h2>1. Ki kezeli az adataidat?</h2>
+<p>Adatkezelő: Pádár Csaba Levente (az EpiCare fejlesztője)<br>
+Kapcsolat: <a href="mailto:epicare.calendar@gmail.com">epicare.calendar@gmail.com</a></p>
+
+<h2>2. Milyen adatokat kezelünk és miért?</h2>
+<table>
+  <tr><th>Adat</th><th>Cél</th><th>Jogalap (GDPR)</th></tr>
+  <tr><td>Név, e-mail cím, jelszó (titkosítva), szerepkör (páciens / orvos)</td>
+      <td>Fiók létrehozása és bejelentkezés</td><td>Szerződés teljesítése – 6. cikk (1) b)</td></tr>
+  <tr><td>Rohamok (dátum, időpont, időtartam, tünetek, megjegyzés), roham-sablonok, gyógyszerek és adagolás, menstruációs ciklus napjai</td>
+      <td>A napló vezetése, statisztikák, felhőbe mentés és szinkronizálás</td><td>Kifejezett hozzájárulás – 9. cikk (2) a); a regisztrációval és az adatok rögzítésével adod meg</td></tr>
+  <tr><td>Megosztási kód és az orvos–páciens összekapcsolás</td>
+      <td>Hogy az általad választott orvos láthassa a naplódat</td><td>Kifejezett hozzájárulás – a kódot te adod át az orvosnak</td></tr>
+  <tr><td>Előfizetési állapot (prémium igen/nem)</td>
+      <td>Prémium funkciók és a reklámmentesség biztosítása</td><td>Szerződés teljesítése</td></tr>
+  <tr><td>Hirdetési azonosító (IDFA, csak engedéllyel), eszköz- és használati adatok, hozzávetőleges hely (IP alapján)</td>
+      <td>Reklámok megjelenítése és mérése (Google AdMob) az ingyenes verzióban</td><td>Hozzájárulás – 6. cikk (1) a); az alkalmazás első indításakor kérjük</td></tr>
+</table>
+<p>A fizetéseket az Apple bonyolítja le; bankkártya- vagy fizetési adatokhoz nem férünk hozzá.</p>
+
+<h2>3. Kinek adjuk át az adatokat?</h2>
+<ul>
+  <li><strong>Supabase Inc.</strong> – adatbázis- és bejelentkezési szolgáltatás (adatfeldolgozó). Itt tároljuk a fiókodat és a felhőbe mentett naplót, titkosított kapcsolaton keresztül.</li>
+  <li><strong>Google (AdMob)</strong> – reklámszolgáltató. Csak a 2. pontban felsorolt reklámadatokat kapja meg, <strong>egészségügyi adatot nem</strong>. Részletek: <a href="https://policies.google.com/technologies/partner-sites">Google adatkezelése partnerek oldalain</a>.</li>
+  <li><strong>Apple</strong> – az előfizetések kezelése.</li>
+  <li><strong>A kezelőorvosod</strong> – csak akkor, ha átadod neki a megosztási kódodat.</li>
+</ul>
+<p>Ha valamelyik szolgáltató az Európai Gazdasági Térségen kívül kezel adatot, az az Európai Bizottság általános szerződési feltételei (SCC) vagy megfelelőségi határozata alapján történik.</p>
+
+<h2>4. Meddig őrizzük az adatokat?</h2>
+<p>Amíg a fiókod létezik. Ha a Profil oldalon a „Fiók végleges törlése” gombot választod, a fiókodat és a felhőben tárolt összes adatodat töröljük. A telefonodon tárolt helyi adatok az alkalmazás törlésével szűnnek meg.</p>
+
+<h2>5. A jogaid</h2>
+<p>Kérheted az adataidhoz való hozzáférést, helyesbítésüket, törlésüket, kezelésük korlátozását, az adathordozhatóságot, és bármikor visszavonhatod a hozzájárulásodat (ez nem érinti a korábbi adatkezelés jogszerűségét). A reklámokkal kapcsolatos hozzájárulásodat az alkalmazásban a Profil → Jogi információk → Reklám-adatvédelmi beállítások menüben, a követési engedélyt az iPhone Beállítások → Adatvédelem és biztonság → Követés menüben módosíthatod.</p>
+<p>Kérésedet a fenti e-mail címre küldheted, 30 napon belül válaszolunk. Panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH, 1055 Budapest, Falk Miksa utca 9–11., <a href="https://naih.hu">naih.hu</a>).</p>
+
+<h2>6. Gyermekek</h2>
+<p>Az alkalmazást 16 éven aluliak csak szülői vagy gondviselői hozzájárulással használhatják.</p>
+
+<h2>7. Biztonság</h2>
+<p>Az adatok titkosított (HTTPS) kapcsolaton utaznak, és az adatbázisban minden felhasználó csak a saját adataihoz, illetve az orvos csak a vele kóddal összekapcsolt páciensek adataihoz fér hozzá.</p>
+
+<h2>8. Orvosi figyelmeztetés</h2>
+<p>Az EpiCare naplózó alkalmazás, nem orvostechnikai eszköz. Nem állít fel diagnózist, nem ad kezelési javaslatot, és nem helyettesíti az orvosi ellátást. Vészhelyzetben hívd a 112-t.</p>
+
+<h2>9. Változások</h2>
+<p>Ha a szabályzat lényegesen változik, az alkalmazásban értesítünk. A mindenkori változat ezen az oldalon érhető el.</p>
+</main>
+</body>
+</html>

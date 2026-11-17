@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epilepsy Care – Súgó</title>
+<meta name="description" content="Lépésenkénti útmutatók az Epilepsy Care rohamnapló alkalmazáshoz: roham rögzítése, gyógyszer-emlékeztető, megosztás az orvossal.">
+<style>
+  :root { --bg:#ffffff; --fg:#1c2430; --muted:#5b6675; --accent:#0a8fa3; --line:#e3e8ee; --card:#f5f8fa; --warn:#b3261e; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1722; --fg:#e8edf2; --muted:#9aa6b4; --accent:#4fd1e3; --line:#253142; --card:#162131; --warn:#ff8a80; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.3rem; margin:40px 0 8px; padding-top:20px; border-top:1px solid var(--line); scroll-margin-top:16px; }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  a { color:var(--accent); }
+  nav.tartalom { background:var(--card); border-radius:12px; padding:14px 18px; }
+  nav.tartalom ol { margin:6px 0 0; padding-left:22px; }
+  nav.tartalom li { margin:2px 0; }
+  ol.lepesek { padding-left:24px; }
+  ol.lepesek li { margin:6px 0; }
+  .gomb { display:inline-block; font-weight:700; font-size:.85em; letter-spacing:.02em; padding:1px 8px; border-radius:999px; border:1px solid var(--line); background:var(--card); white-space:nowrap; }
+  .tipp { background:var(--card); border-left:4px solid var(--accent); border-radius:8px; padding:10px 14px; margin:14px 0; }
+  .figy { border-left-color:var(--warn); }
+  details { border:1px solid var(--line); border-radius:10px; padding:10px 14px; margin:10px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  details[open] summary { margin-bottom:6px; }
+  footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Epilepsy Care – Súgó</h1>
+<p class="meta">Lépésenkénti útmutatók az alkalmazás használatához · Frissítve: 2026. november 17.</p>
+
+<nav class="tartalom" aria-label="Tartalom">
+  <strong>Tartalom</strong>
+  <ol>
+    <li><a href="#regisztracio">Regisztráció és bejelentkezés</a></li>
+    <li><a href="#roham">Roham rögzítése</a></li>
+    <li><a href="#szerkesztes">Roham módosítása vagy törlése</a></li>
+    <li><a href="#sablonok">Sablonok a gyakori rohamokhoz</a></li>
+    <li><a href="#gyogyszer">Gyógyszerek felvétele</a></li>
+    <li><a href="#emlekezteto">Gyógyszer-emlékeztető bekapcsolása</a></li>
+    <li><a href="#statisztika">Statisztikák</a></li>
+    <li><a href="#ciklus">Menstruációs ciklus jelölése</a></li>
+    <li><a href="#orvos">Megosztás a kezelőorvossal</a></li>
+    <li><a href="#orvosoknak">Orvosoknak: páciens csatlakoztatása</a></li>
+    <li><a href="#torles">Kijelentkezés és fióktörlés</a></li>
+    <li><a href="#gyik">Gyakori kérdések</a></li>
+  </ol>
+</nav>
+
+<div class="tipp figy">
+  <strong>Fontos:</strong> az Epilepsy Care naplózó alkalmazás, nem helyettesíti az orvosi ellátást.
+  Vészhelyzetben (például 5 percnél hosszabb roham, sorozatrohamok, sérülés) azonnal hívd a <strong>112</strong>-t.
+</div>
+
+<h2 id="regisztracio">1. Regisztráció és bejelentkezés</h2>
+<ol class="lepesek">
+  <li>Nyisd meg az alkalmazást, és koppints a <em>„Nincs még fiókod? Regisztrálj!”</em> feliratra.</li>
+  <li>Válaszd ki, hogy <span class="gomb">Páciens</span> vagy <span class="gomb">Orvos</span> vagy.</li>
+  <li>Páciensként a nemedet is megadhatod (Nő, Férfi, Nem adom meg). A „Nő” választásakor elérhető a <a href="#ciklus">menstruációs ciklus jelölése</a>.</li>
+  <li>Add meg a teljes neved, az e-mail-címed és egy jelszót, majd koppints a <span class="gomb">REGISZTRÁCIÓ</span> gombra.</li>
+  <li>A „Sikeres regisztráció” üzenet után lépj be ugyanazzal az e-mail-címmel és jelszóval.</li>
+</ol>
+<div class="tipp">Hozzátartozóként (például szülőként) is regisztrálhatsz páciens fiókot a beteg nevére, és te vezetheted helyette a naplót.</div>
+
+<h2 id="roham">2. Roham rögzítése</h2>
+<p><strong>Ha most történik vagy épp most ért véget</strong>, és nincs időd részletezni:</p>
+<ol class="lepesek">
+  <li>A kezdőképernyőn koppints a piros <span class="gomb">GYORS (MOST)</span> gombra.</li>
+  <li>A roham a pontos időponttal azonnal bekerül a naplóba. A részleteket (hossz, tünetek) később is pótolhatod, lásd a <a href="#szerkesztes">3. pontot</a>.</li>
+</ol>
+<p><strong>Részletes rögzítés:</strong></p>
+<ol class="lepesek">
+  <li>Koppints az <span class="gomb">ÚJ ROHAM</span> gombra.</li>
+  <li>Állítsd be a <em>Pontos idő</em> mezőben, mikor kezdődött a roham.</li>
+  <li>Add meg a roham hosszát percben és másodpercben.</li>
+  <li>Jelöld be a tüneteket (például Görcs, Zavartság, Fáradtság, Fejfájás), és ha kell, írj megjegyzést.</li>
+  <li>Válassz egy naptári színt, ha a különböző típusú rohamokat színnel szeretnéd megkülönböztetni.</li>
+  <li>Koppints a <span class="gomb">MENTÉS</span> gombra.</li>
+</ol>
+<div class="tipp">A kezdőképernyő naptárában egy napra koppintva láthatod, milyen rohamok voltak aznap.</div>
+
+<h2 id="szerkesztes">3. Roham módosítása vagy törlése</h2>
+<ol class="lepesek">
+  <li>A naptárban koppints arra a napra, amelyiken a roham volt.</li>
+  <li>A naptár alatti listában koppints a rohamra.</li>
+  <li>Módosítsd az adatokat, majd koppints a <span class="gomb">MENTÉS</span> gombra, vagy a <span class="gomb">TÖRLÉS</span> gombbal töröld a rohamot.</li>
+</ol>
+
+<h2 id="sablonok">4. Sablonok a gyakori rohamokhoz</h2>
+<p>Ha a rohamaid gyakran hasonlóak, készíts sablont, így rögzítéskor nem kell mindent újra beállítani.</p>
+<ol class="lepesek">
+  <li>A kezdőképernyő tetején koppints a <span class="gomb">SABLONOK</span> menüre.</li>
+  <li>Koppints az <span class="gomb">ÚJ SABLON</span> gombra, adj neki nevet (például „Kis roham”), állítsd be a hosszt, a tüneteket és a színt, majd mentsd.</li>
+  <li>Új roham rögzítésekor a <em>„Gyors kitöltés sablonból”</em> résznél egy koppintással kitöltheted az űrlapot.</li>
+</ol>
+
+<h2 id="gyogyszer">5. Gyógyszerek felvétele</h2>
+<ol class="lepesek">
+  <li>A kezdőképernyő tetején koppints a <span class="gomb">GYÓGYSZEREK</span> menüre.</li>
+  <li>Koppints az <span class="gomb">ÚJ GYÓGYSZER</span> gombra.</li>
+  <li>Add meg a gyógyszer nevét, a mennyiséget (például 500) és az egységet (például mg).</li>
+  <li>Jelöld be, melyik napszakban szeded: <em>Reggel</em>, <em>Délben</em> vagy <em>Este</em>.</li>
+  <li>Állítsd be, mettől szeded. Ha nincs vége, kapcsold be a <em>„Folyamatosan szedi”</em> kapcsolót, különben add meg, meddig szeded.</li>
+  <li>Koppints a <span class="gomb">MENTÉS</span> gombra.</li>
+</ol>
+<p>A <em>Lista</em> és <em>Naptár</em> nézet között felül válthatsz. Egy gyógyszert a listában rákoppintva módosíthatsz vagy törölhetsz.</p>
+
+<h2 id="emlekezteto">6. Gyógyszer-emlékeztető bekapcsolása</h2>
+<ol class="lepesek">
+  <li>A <span class="gomb">GYÓGYSZEREK</span> oldalon koppints a jobb felső sarokban lévő <strong>harang</strong> ikonra.</li>
+  <li>Kapcsold be az <em>Emlékeztetők</em> kapcsolót. Amikor az iPhone rákérdez, engedélyezd az értesítéseket.</li>
+  <li>Az <em>Időpontok</em> résznél állítsd be, mikor szólaljon meg az emlékeztető reggel, délben és este. Alapértelmezés szerint ez 8:00, 12:00 és 20:00.</li>
+  <li>Koppints a <span class="gomb">Kész</span> gombra.</li>
+</ol>
+<p>A beállított időpontokban értesítést kapsz azokról a gyógyszerekről, amelyeket az adott napszakban szedsz.</p>
+<div class="tipp"><strong>Nem jön értesítés?</strong> Nyisd meg az iPhone <em>Beállítások → Értesítések → Epilepsy Care</em> menüjét, és kapcsold be az értesítések engedélyezését. Ha az emlékeztető oldalon az „Az értesítések le vannak tiltva” üzenetet látod, a <span class="gomb">Megnyitás a Beállításokban</span> gomb oda visz. Érdemes időnként megnyitni az alkalmazást, mert az emlékeztetőket mindig két hétre előre ütemezi.</div>
+
+<h2 id="statisztika">7. Statisztikák</h2>
+<p>A kezdőképernyő tetején a <span class="gomb">STATISZTIKA</span> menüben láthatod:</p>
+<ul>
+  <li>az összes roham számát és az átlagos hosszukat,</li>
+  <li>a leggyakoribb tünetet,</li>
+  <li>a havi és az éves bontást grafikonon.</li>
+</ul>
+<p>A statisztika akkor jelenik meg, ha már van elég rögzített roham.</p>
+
+<h2 id="ciklus">8. Menstruációs ciklus jelölése</h2>
+<p>Nőknél a rohamok összefüggést mutathatnak a ciklussal. Ha a menstruációs napokat is jelölöd, ezt te és az orvosod is láthatjátok.</p>
+<ol class="lepesek">
+  <li>Regisztrációkor válaszd a <span class="gomb">Nő</span> lehetőséget. Ha már van fiókod: <span class="gomb">PROFIL</span> → <em>Nem</em> → <span class="gomb">Nő</span>.</li>
+  <li>A kezdőképernyő naptárában koppints arra a napra, amelyiken menstruáltál.</li>
+  <li>Koppints a <span class="gomb">Menstruáció rögzítése</span> gombra. Ha tévedtél, ugyanott a <span class="gomb">Menstruáció törlése</span> gombbal visszavonhatod.</li>
+</ol>
+
+<h2 id="orvos">9. Megosztás a kezelőorvossal</h2>
+<p>A kezelőorvosod csak akkor látja a naplódat, ha te megadod neki a saját kódodat.</p>
+<ol class="lepesek">
+  <li>Koppints a <span class="gomb">PROFIL</span> menüre.</li>
+  <li>Az <em>Orvosi hozzáférési kód</em> résznél koppints a <span class="gomb">KÓD MÁSOLÁSA</span> gombra.</li>
+  <li>Küldd el a kódot az orvosodnak (például üzenetben vagy e-mailben), vagy mondd be neki a vizsgálaton.</li>
+  <li>Az orvos a saját Epilepsy Care fiókjában felveszi a kódot, és onnantól látja a rohamaidat, gyógyszereidet és a statisztikáidat.</li>
+</ol>
+<div class="tipp figy">A kódot csak annak add meg, akinek valóban látnia kell a naplódat. Aki ismeri a kódot, az hozzáfér az egészségügyi adataidhoz.</div>
+
+<h2 id="orvosoknak">10. Orvosoknak: páciens csatlakoztatása</h2>
+<ol class="lepesek">
+  <li>Regisztrálj <span class="gomb">Orvos</span> szerepkörrel, és jelentkezz be.</li>
+  <li>Koppints az <span class="gomb">ÚJ PÁCIENS CSATLAKOZTATÁSA</span> gombra.</li>
+  <li>Írd be a pácienstől kapott kódot (például EA9B94AF) és a nevet, ahogyan a listában látni szeretnéd, majd koppints a <span class="gomb">Mentés</span> gombra.</li>
+  <li>A <em>Pácienseim</em> listában a páciensre koppintva láthatod a rohamnaptárát, a gyógyszereit és a statisztikáit.</li>
+</ol>
+
+<h2 id="torles">11. Kijelentkezés és fióktörlés</h2>
+<ul>
+  <li><strong>Páciensként:</strong> <span class="gomb">PROFIL</span> → <span class="gomb">Kijelentkezés</span> vagy <span class="gomb">Fiók végleges törlése</span>.</li>
+  <li><strong>Orvosként:</strong> a jobb felső sarokban a <strong>⋯</strong> gomb → <em>Kijelentkezés</em> vagy <em>Fiók végleges törlése</em>.</li>
+</ul>
+<div class="tipp figy">A fióktörlés nem vonható vissza: a fiókod és minden felhőben tárolt adatod (rohamok, gyógyszerek, beállítások) véglegesen törlődik.</div>
+
+<h2 id="gyik">12. Gyakori kérdések</h2>
+<details>
+  <summary>Elvesznek az adataim, ha új telefont veszek?</summary>
+  <p>Nem. Az adataid a fiókodhoz kötve, biztonságos felhőben tárolódnak. Az új telefonon telepítsd az alkalmazást, és jelentkezz be ugyanazzal az e-mail-címmel és jelszóval.</p>
+</details>
+<details>
+  <summary>Elfelejtettem a jelszavam. Mit tegyek?</summary>
+  <p>Írj nekünk az <a href="mailto:epicare.calendar@gmail.com">epicare.calendar@gmail.com</a> címre arról az e-mail-címről, amellyel regisztráltál, és segítünk.</p>
+</details>
+<details>
+  <summary>Androidon is elérhető?</summary>
+  <p>Igen, a Google Play áruházban: <a href="https://play.google.com/store/apps/details?id=com.padarcsaba.rohamnaplo">Epilepsy Care Androidra</a>. iPhone-ra az <a href="https://apps.apple.com/app/id6794612503">App Store-ban</a> töltheted le.</p>
+</details>
+<details>
+  <summary>Ki látja az adataimat?</summary>
+  <p>Csak te, és az az orvos, akinek megadtad a kódodat. Az egészségügyi adataidat nem adjuk el és nem adjuk át hirdetőknek. Részletek: <a href="adatvedelem.html">Adatvédelmi szabályzat</a>.</p>
+</details>
+<details>
+  <summary>Rosszul rögzítettem egy rohamot. Javítható?</summary>
+  <p>Igen, lásd a <a href="#szerkesztes">Roham módosítása vagy törlése</a> részt.</p>
+</details>
+<details>
+  <summary>Mennyibe kerül?</summary>
+  <p>Az alkalmazás letöltése és használata ingyenes.</p>
+</details>
+
+<h2 id="kapcsolat">Nem találtad a választ?</h2>
+<p>Írj nekünk: <a href="mailto:epicare.calendar@gmail.com">epicare.calendar@gmail.com</a>. Írd meg, milyen telefonod van (iPhone vagy Android), és mi történt. Egy képernyőkép sokat segít.</p>
+
+<footer>
+  <a href="adatvedelem.html">Adatvédelmi szabályzat</a> · © 2026 Pádár Csaba Levente
+</footer>
+</main>
+</body>
+</html>
